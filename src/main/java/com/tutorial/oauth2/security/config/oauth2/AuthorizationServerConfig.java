@@ -18,8 +18,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		
 		clients
 			.inMemory()
-			.withClient("client")
-			.secret("{noop}secret")
+			.withClient("hone-wiki")
+			.secret("{noop}hone-wiki-secret")
 			.redirectUris("http://localhost:8080/callback")
 			.authorizedGrantTypes("authorization_code")
 			.scopes("read_user", "write_user")
