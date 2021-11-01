@@ -22,7 +22,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 			.secret("{noop}secret")
 			.redirectUris("http://localhost:8080/callback")
 			.authorizedGrantTypes("authorization_code")
-			.scopes("read_profile", "write_profile")
+			.scopes("read_user", "write_user")
 			.accessTokenValiditySeconds(1000*60*10)
 			.refreshTokenValiditySeconds(1000*60*11)
 			;
